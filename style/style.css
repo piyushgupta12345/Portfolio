@@ -379,6 +379,7 @@ h2 span{
     background-color: #1f242d;
     color: #fff;
     padding: 80px 10px 0px;
+    padding-bottom: 52px;
 }
 
 /* <!--  =================  Heading  ================= --> */
@@ -386,6 +387,7 @@ h2 span{
     margin-bottom: 20px;
     font-size: 2rem;
     transition: all 0.5s ease-in;
+    user-select: none;
 }
 
 .skill-section h1:hover{
@@ -395,101 +397,26 @@ h2 span{
 /* <!--  =================  Skill Container  ================= --> */
 .skill-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px
 }
 
-/* <!-- *************  Intro  ************** --> */
-.intro {
-    display: flex;
-    gap: 265px;
-    margin-bottom: 10px;
-    justify-content: space-between;
-}
-
-/* <!-- *************  skill-bar  ************** --> */
-.skill-bar {
-    width: 100%;
-    background: #d9d9d9;
-    height: 10px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+/* <!-- *************  Card  ************** --> */
+.card {
     cursor: pointer;
+    user-select: none;
 }
 
-.html-bar {
-    width: 90%;
-    background: red;
-    height: 10px;
-    border-radius: 20px;
+.card>img {
+    width: 256px;
+    height: 256px;
 }
 
-.css-bar {
-    width: 85%;
-    background: red;
-    height: 10px;
-    border-radius: 20px;
-}
-
-.js-bar {
-    width: 70%;
-    background: red;
-    height: 10px;
-    border-radius: 20px;
-}
-
-.taiwind-bar {
-    width: 80%;
-    background: red;
-    height: 10px;
-    border-radius: 20px;
-}
-
-.java-bar {
-    width: 60%;
-    background: red;
-    height: 10px;
-    border-radius: 20px;
-}
-
-.python-bar {
-    width: 50%;
-    background: red;
-    height: 10px;
-    border-radius: 20px;
-}
-
-.node-bar {
-    width: 80%;
-    background: red;
-    height: 10px;
-    border-radius: 20px;
-}
-
-.express-bar {
-    width: 70%;
-    background: red;
-    height: 10px;
-    border-radius: 20px;
-}
-
-.mongo-bar {
-    width: 80%;
-    background: red;
-    height: 10px;
-    border-radius: 20px;
-}
-
-.mysql-bar {
-    width: 80%;
-    background: red;
-    height: 10px;
-    border-radius: 20px;
-}
-
-@media (max-width:425px) {
-    .intro{
-        gap: 170px;
-    }
+.card:hover {
+    transition-duration: 1s;
+    translate: 0px -20px;
 }
 
 /* <!--  ++++++++++++++++  Project Section  +++++++++++++++++ --> */
